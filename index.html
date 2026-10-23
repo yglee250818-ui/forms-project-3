@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STEP 1: Update page title -->
+    <title>Your Theme Title Here</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<!-- STEP 2: Add theme class to body: "theme-tech", "theme-kpop", or "theme-camp" -->
+<body>
+
+    <!-- PAGE HEADER -->
+    <h1 id="page-title">VIP Tech Registration</h1>
+  <p class="info-text">Please complete all required fields.</p>
+  <p class="info-text">Double check your email before submitting.</p>
+
+
+    <!-- MAIN FLEXBOX CONTAINER -->
+    <div class="main-layout">
+
+
+        <!-- CARD 1: FORM CARD -->
+        <form action="#" method="POST" class="card form-card">
+            <h2>Event Sign-Up</h2>
+
+
+            <!-- Text Input: Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Doe">
+            </div>
+            
+
+
+            <!-- Email Input: Email Address -->
+           <div class="form-group">
+        <label for="fullName">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="e.g., jane.doe@example.com">
+    </div>
+
+
+            <!-- Date Input -->
+    <div class="form-group">
+        <label for="fullName">Birth Date:</label>
+        <input type="date" id="date" name="birth date" required>
+    </div>
+
+<!-- Textarea: Special Notes -->
+   <div class="form-group">
+
+    <label for="userNotes">Special Requests:</label>
+        <textarea id="userNotes"
+              name="userNotes"
+              rows="3"
+              placeholder="Enter dietary or seating needs ..."></textarea>
+
+    </div>        
+
+
+            <!-- Radio Buttons: Pass Tier -->
+           <div class="form-group">
+        <label>Ticket Tier:</label>
+        <div class="option-group">
+            <input type="radio" id="tierPass" name="ticket" value="standard" required>
+            <label for="tierPass">Standard</label>
+            <input type="radio" id="tierVIP" name="ticket" value="vip">
+            <label for="tierVIP">VIP Pass</label>
+        </div>
+    </div>
+
+<div class="form-group ">
+        <label>Dietary Preferences:</label>
+            <div class="option-group">
+                <input type="checkbox" id="veg" name="diet" value="vegetarian">
+                <label for="veg">Vegetarian</label>
+            </div>
+    </div>
+    <!-- Dropdown Select Menu with Validation -->
+    <div class="form-group">
+        <label for="tshirt">T-Shirt Size:</label>
+        <select id="tshirt" name="tshirt" required>
+            <option value="" disabled selected>Select your size...</option>
+            <option value="s">Small</option>
+            <option value="m">Medium</option>
+            <option value="l">Large</option>
+        </select>
+    </div>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Registration</button>
+        </form>
+
+
+        <!-- CARD 2: PROFILE & SCHEDULE CARD -->
+        <div class="card form-card">
+            <div class="profile-header">
+                <img class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/d/da/Mark_Rober-_Close.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" alt="Avatar">
+                <h3>Attendee Profile</h3>
+                <p>Status: Pending Registration</p>
+            </div>
+
+
+            <!-- SCHEDULE TABLE -->
+            <table>
+               <p><strong>Event Schedule</strong></p> 
+        <thead>
+          <tr>
+        <td><strong>Time</strong></td>
+        <td><strong>Session</strong></td>
+        <td><strong>Room</strong></td>
+        </tr>
+        </thead>
+        <tbody>
+    <tr>
+        <td>9:00<br>AM</td>
+        <td>Keynote Speech</td>
+        <td>Main<br>Hall</td>
+    </tr>
+        <tr> 
+        <td>11:00<br>AM</td>
+        <td>HTML Forms<br>Workshop</td>
+        <td>Lab A</td>
+    </tr> 
+    <tr>
+        <td>1:00<br>PM</td>
+        <td>Lunch &<br>Networking</td>
+        <td>Cafeteria</td>
+    </tr>  
+    <tr> 
+        <td>2:30<br>PM</td>
+        <td>CSS Layouts Deep<br>Dive</td>
+        <td>Lab B</td>
+    </tr>  
+    
+      </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>
